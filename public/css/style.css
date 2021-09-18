@@ -9,3 +9,6 @@ label {
 .button-group button {
     margin-right: 10px;
 }
+.error {
+    color: red;
+}
