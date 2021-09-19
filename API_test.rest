@@ -1,0 +1,48 @@
+### index
+GET /api/items HTTP/1.1
+Host: auction-app-sayaka310.herokuapp.com
+Accept: application/json
+
+### store
+POST /api/items HTTP/2.0
+Host: auction-app-sayaka310.herokuapp.com
+Accept: application/json
+content-type: application/json
+
+{
+    "name": "エアマックス 95",
+    "description": "1995年のランニングマックスモデルの復刻版。時代を席巻した名モデルAIR MAX95。当時は斬新でハイテクなルックスがストリートのファッションシーンを席巻しました。",
+    "price": 25000,
+    "seller": "Taro",
+    "email": "taro@test.com",
+    "image_url": "img21.shop-pro.jp/PA01349/729/product/128749782.jpg?cmsp_timestamp=20180305162210"
+}
+
+
+### show
+GET /api/items/1 HTTP/1.1
+Host: auction-app-sayaka310.herokuapp.com
+Accept: application/json
+
+
+### update
+PUT /api/items/1
+Host: auction-app-sayaka310.herokuapp.com/
+Accept: application/json
+content-type: application/json
+
+{
+    "name": "エアマックス 95",
+    "description": "1995年のランニングマックスモデルの復刻版。時代を席巻した名モデルAIR MAX95。当時は斬新でハイテクなルックスがストリートのファッションシーンを席巻しました。",
+    "price": 25000,
+    "seller": "Taro",
+    "email": "taro@test.com",
+    "image_url": "img21.shop-pro.jp/PA01349/729/product/128749782.jpg?cmsp_timestamp=20180305162210"
+}
+
+
+### destroy
+DELETE /api/items/2 HTTP/1.1
+Host: auction-app-sayaka310.herokuapp.com/
+Accept: application/json
+
